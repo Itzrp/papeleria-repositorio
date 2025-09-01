@@ -1,0 +1,263 @@
+/*Tipografías*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poetsen+One&display=swap');
+
+body{
+    background-color: #B3C2FF;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+}
+
+h2{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+    color: #110E55;
+    text-align: center;
+}
+
+.header-style{
+    padding: 10px 20px;
+    font-size: medium;
+}
+
+.logo-style{
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+}
+
+.navbar{
+    list-style: none;
+    padding: 0px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-style{
+    text-decoration: none;
+    color: black;
+    background-color: #FFA87A;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.img-ppal-style{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.items{
+    padding: 10px 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.items-container{
+    padding: 20px 0px;
+}
+
+.card-item{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; 
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);      
+}
+
+.card-item h4{
+    font-weight: 300;
+    text-align: center;
+}
+
+.card-item p{
+    font-size: large;
+    text-align: center;
+}
+
+.img-item-style{
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+}
+
+.discount{
+    padding: 20px;
+}
+
+.discount div h3{
+    color: #110E55;
+}
+
+.discount div p{
+    font-size: medium;
+    font-weight: 700;
+}
+
+.discount div ul li{
+    list-style: circle;
+}
+.icon-style{
+    width: 15px;
+    height: 15px;
+}
+
+.about-us{
+    padding: 20px;
+    background-color: #E5D4FF;
+}
+
+.img-papeleria-style{
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+}
+
+.contact-us{
+    background-color: #90A1E6;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.map{
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form-style{
+    font-weight: 700;
+}
+
+
+.form-style input{
+    background-color: #D9D9D9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+    border: none;
+    padding: 5px;
+}
+
+.form-style textarea{
+    background-color: #D9D9D9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: small;
+    border: none;
+    padding: 5px;
+}
+
+.footer-style{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.catalog-container{
+    background-color: #C5CEF2;
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+.catalog-container h2{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    color: black;
+    text-align: left;
+}
+
+.products-container{
+    padding: 10px 0px;
+}
+
+.card-product{
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px; 
+    max-height: 200px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);      
+}
+
+.card-product h4{
+    font-weight: 300;
+    font-size: smaller;
+    text-align: left;
+}
+
+.card-product p{
+    font-size: medium;
+    text-align: left;
+}
+
+.img-product-style{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+}
+
+.service-container h2{
+    color: black;
+}
+
+.service-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.service-circle img{
+    width: 30%;
+}
+
+.service-card-container{
+    padding: 10px 10px;
+}
+
+.service-card{
+    background-color: #C5CEF2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 33%;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);   
+}
+
+.service-card h3{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: #110E55;
+    text-align: center;
+}
+
+.service-card img{
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
+}
