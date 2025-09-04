@@ -4,28 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="header-style">
-        <a href="../index.html">
-            <img src="../assets/img/logo-lwo.png" alt="Logo papelería" class="logo-style">
-        </a>
-        <nav>
-            <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="../index.html#offers">Promociones</a></li>
-                <li><a href="../index.html#about-us">Sobre nosotros</a></li>
-                <li><a href="../index.html#contact-us">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top my-navbar">
+            <div class="container-fluid">
+                <a href="../index.html">
+                        <img src="../assets/img/logo-lwo.png" alt="Logo papelería" class="logo-style">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav gap-3 fs-5">
+                        <li class="nav-item my-navbar-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item my-navbar-item">
+                            <a class="nav-link active" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item my-navbar-item">
+                            <a class="nav-link active" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item my-navbar-item">
+                            <a class="nav-link active" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item my-navbar-item">
+                            <a class="nav-link active" href="../index.html#about-us">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item my-navbar-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://wa.link/" target="_blank" class="button-style">Cotiza aquí</a>
+            </div>
         </nav>
-        <a href="https://wa.link/" target="_blank" class="button-style">Cotiza aquí</a>
     </header>
     <main>
         <div class="catalog-container">
-            <div> <!--CATEGORÍAS-->
+            <div class="categories-container"> <!--CATEGORÍAS-->
                 <h2>Categorías</h2>
                 <div>
                     <p>Todos los productos</p>
@@ -53,21 +73,56 @@
                 </div>
             </div>
             
-            <div> <!--CATÁLOGO-->
+            <div class="div-products"> <!--CATÁLOGO-->
                 <h3>Todos los productos</h3>
                 <div class="products-container"> <!--CONTENEDOR DE ITEMS-->
-                    <div class="card-product">
-                        <img src="../assets/img/sketch.jpg" alt="artículos escolares" class="img-product-style">
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
                         <p>Lápiz de grafito para dibujo</p>
                         <h4>24 piezas</h4>
                     </div>
-                    <div class="card-product" style="background-color: white;">
-                        <img src="../assets/img/sketch.jpg" alt="artículos escolares" class="img-product-style">
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
                         <p>Lápiz de grafito para dibujo</p>
                         <h4>24 piezas</h4>
                     </div>
-                    <div class="card-product" style="background-color: white;">
-                        <img src="../assets/img/sketch.jpg" alt="artículos escolares" class="img-product-style">
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
+                        <p>Lápiz de grafito para dibujo</p>
+                        <h4>24 piezas</h4>
+                    </div>
+                    <div class="card-item">
+                        <img src="../assets/img/sketch.jpg" alt="artículos escolares">
                         <p>Lápiz de grafito para dibujo</p>
                         <h4>24 piezas</h4>
                     </div>
@@ -75,8 +130,9 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p class="footer-style">©2025 Papelería La Web On. Todos los derechos reservados.</p>
+    <footer class="footer-style">
+        <p>©2025 Papelería La Web On. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
