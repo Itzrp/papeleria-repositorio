@@ -1,8 +1,4 @@
 @media (max-width: 61.875rem){
-    .my-navbar-item{
-        font-size: map-get($font-sizes , s);
-    }
-
     #button-cotiza{
         display: inline-block;
         font-weight: map-get($font-weights , bold);

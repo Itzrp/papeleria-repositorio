@@ -1,4 +1,5 @@
 @media (max-width: 48rem){
+
     #services-container{
         div{
             @include flex(column, none, center, center, 1.875rem);
@@ -15,5 +16,12 @@
             }
         }
     }
+
+    .service-card{ 
+
+    img{
+        width: 50%;
+    }
+}
 
 }

@@ -23,7 +23,7 @@ a {
   color: #110E55;
 }
 
-.text, .button-style, .button-offer-style, .my-navbar .my-navbar-item, .grid4 p, .grid2 p, .discount ul li, .form-size form div textarea, .form-size form div input, .form-size form div label, .map-container p, .ticket-header, .service-card ul li, .service-card p, .categories-container div p, body {
+.text, .button-style, .button-offer-style, .my-navbar-item, .grid4 p, .grid2 p, .discount ul li, .form-size form div textarea, .form-size form div input, .form-size form div label, .map-container p, .ticket-header, .service-card ul li, .service-card p, .categories-container div p, body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -478,14 +478,18 @@ body {
 
 /*componentes*/
 .my-navbar {
+  max-width: 100%;
   padding-top: 0.625rem;
+  padding-right: 1.25rem;
   background-color: #B3C2FF;
 }
-.my-navbar .my-navbar-item {
+
+.my-navbar-item {
   font-size: 1.125rem;
   font-weight: 400;
 }
-.my-navbar .my-navbar-item .nav-link.active {
+
+.nav-link.active {
   color: #110E55;
   font-weight: 700;
 }
@@ -590,9 +594,6 @@ body {
 
 /*mediaq*/
 @media (max-width: 61.875rem) {
-  .my-navbar-item {
-    font-size: 0.8125rem;
-  }
   #button-cotiza {
     display: inline-block;
     font-weight: 700;
@@ -639,6 +640,9 @@ body {
   #cards-container div div {
     width: 50%;
   }
+  .service-card img {
+    width: 50%;
+  }
 }
 @media (max-width: 20rem) {
   .img-item-style, .img-item-style-categories {
@@ -648,6 +652,9 @@ body {
   #cards-container div div {
     width: 100%;
     justify-content: center;
+  }
+  .service-card img {
+    width: 100%;
   }
   .img-item-style-categories {
     width: 40%;

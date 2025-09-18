@@ -1,4 +1,5 @@
 @media (max-width: 20rem){
+
     .img-item-style{
         width: 50%;
         margin-bottom: .625rem;
@@ -12,6 +13,13 @@
             }
         }
     }
+
+    .service-card{ 
+
+    img{
+        width: 100%;
+    }
+}
 
     .img-item-style-categories{
         width: 40%;
