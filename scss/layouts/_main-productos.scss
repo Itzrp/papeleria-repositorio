@@ -1,0 +1,37 @@
+.catalog-container{
+    @include flex(row, none, none, none, 1.25rem);
+    background-color: $bgColor5;
+    padding-top: 1.875rem;
+    padding-bottom: 2.5rem;
+
+    section{
+        h2{
+            font-weight: map-get($font-weights , regular);
+            font-size: map-get($font-sizes , l);
+            color: $colorTerciario;
+        }
+    }
+}
+
+.categories-container{
+    @include flex(column, none, left, none, .625rem);
+    padding: 0 0 0 .9375rem;
+    width: 30%;
+
+    h2{
+        font-weight: map-get($font-weights , regular);
+        font-size: map-get($font-sizes , xl);
+        color: $colorTerciario;
+    }
+
+    div{
+        @include flex(row, none, space-between, center, none);
+
+        p{
+            @extend .text;
+            margin: 0;
+            font-weight: map-get($font-weights, regular);
+        }
+    }
+}
+

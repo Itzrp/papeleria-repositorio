@@ -1,0 +1,48 @@
+@media (max-width: 61.875rem){
+    .my-navbar-item{
+        font-size: map-get($font-sizes , s);
+    }
+
+    #button-cotiza{
+        display: inline-block;
+        font-weight: map-get($font-weights , bold);
+    
+    }
+
+    #button-outside{
+        display: none;
+    }
+
+    #cards-container{
+        max-width: 100%;
+    }
+
+    .categories-container{
+        width: 45%;
+    }
+
+    .ticket-card {
+        width: 90%;
+    }
+
+    .ticket-header {
+        font-size: map-get($font-sizes , m);
+    }
+
+    .ticket-body {
+        h3{
+            font-size: map-get($font-sizes , l);
+        }
+
+        p{
+            font-size: map-get($font-sizes , s);
+            padding: .625rem;
+            margin-bottom: 0;
+        }
+
+        a{
+            font-size: map-get($font-sizes , s);
+        }
+    }
+
+}

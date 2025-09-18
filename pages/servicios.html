@@ -20,68 +20,82 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav gap-3 fs-5">
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="productos.html">Productos</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item my-navbar-item">
                             <a class="nav-link active" href="#">Servicios</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="promociones.html">Promociones</a>
+                            <a class="nav-link" href="promociones.html">Promociones</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="../index.html#about-us">Sobre nosotros</a>
+                            <a class="nav-link" href="../index.html#about-us">Sobre nosotros</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item my-navbar-item">
+                            <a href="https://wa.link/" target="_blank" id="button-cotiza" class="nav-link">Cotiza aquí</a>
                         </li>
                     </ul>
                 </div>
-                <a href="https://wa.link/" target="_blank" class="button-style">Cotiza aquí</a>
+                <a href="https://wa.link/" target="_blank" id="button-outside" class="btn btn-primary button-style">Cotiza aquí</a>
             </div>
         </nav>
     </header>
+
     <main class="main-servicios">
         <section class="service-banner"> <!--IMAGEN PRINCIPAL-->
             <div class="banner-img">
             </div>
             <div class="service-banner-effect">
-                <div class="service-circle">
+                <div>
                     <img src="../assets/img/ayudar.png" alt="cuadernos">
                     <h2>Servicios</h2>
                 </div>
             </div>
         </section>
 
-        <section class="service-card-container"><!--SERVICIOS-->
-            <div class="service-card">
-                <h3>Impresiones</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni distinctio iusto molestias laudantium? Possimus molestiae voluptatum non perspiciatis quaerat deserunt. Sit similique totam placeat. Corrupti cum totam adipisci. Repellat!</p>
-                <ul>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
-                </ul>
-                <img src="../assets/img/Impresionbn.jpeg" alt="impresiones">
-            </div>
-            <div class="service-card">
-                <h3>Trámites</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni distinctio iusto molestias laudantium? Possimus molestiae voluptatum non perspiciatis quaerat deserunt. Sit similique totam placeat. Corrupti cum totam adipisci. Repellat!</p>
-                <ul>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
-                </ul>
-                <img src="../assets/img/Impresionbn.jpeg" alt="impresiones">
-            </div>
-            <div class="service-card">
-                <h3>Reparación de equipo de cómputo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni distinctio iusto molestias laudantium? Possimus molestiae voluptatum non perspiciatis quaerat deserunt. Sit similique totam placeat. Corrupti cum totam adipisci. Repellat!</p>
-                <ul>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
-                </ul>
-                <img src="../assets/img/Impresionbn.jpeg" alt="impresiones">
+
+        <section id="services-container" class="container mt-5 pb-5"> <!--SERVICIOS-->
+            <div class="row g-4 align-items-center"> <!--CONTENEDOR DE CARDS-->
+                <div class="col-md-4">
+                    <article class="card h-auto align-items-center p-4 rounded-4 service-card">
+                        <h3 class="text-center">Copias e impresiones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni distinctio iusto molestias laudantium? Possimus molestiae voluptatum non perspiciatis quaerat deserunt. Sit similique totam placeat. Corrupti cum totam adipisci. Repellat!</p>
+                        <ul>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
+                        </ul>
+                        <img src="../assets/img/Impresionbn.jpeg" alt="impresiones">
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-auto align-items-center p-4 rounded-4 service-card">
+                        <h3 class="text-center">Trámites</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni distinctio iusto molestias laudantium? Possimus molestiae voluptatum non perspiciatis quaerat deserunt. Sit similique totam placeat. Corrupti cum totam adipisci. Repellat!</p>
+                        <ul>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
+                        </ul>
+                        <img src="../assets/img/Impresionbn.jpeg" alt="impresiones">
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-auto align-items-center p-4 rounded-4 service-card">
+                        <h3 class="text-center">Reparación de equipos de cómputo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni distinctio iusto molestias laudantium? Possimus molestiae voluptatum non perspiciatis quaerat deserunt. Sit similique totam placeat. Corrupti cum totam adipisci. Repellat!</p>
+                        <ul>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est quasi. </li>
+                        </ul>
+                        <img src="../assets/img/Impresionbn.jpeg" alt="impresiones">
+                    </article>
+                </div>
+                
             </div>
         </section>
     </main>

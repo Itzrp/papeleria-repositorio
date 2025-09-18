@@ -1,0 +1,72 @@
+.about-us{
+    padding: 2.5rem 1.25rem 3.125rem 1.25rem;
+    background-color: #E5D4FF;
+}
+
+.about-us-grid{
+    @include grid(35% 45% 15%, auto, center, none, 1.5625rem);
+    grid-template-areas: 
+    "grid1 grid2 grid3"
+    "grid1 grid4 grid4"
+    ;
+}
+
+.grid1{
+    @include gridx(flex, none, grid1);
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+    }
+}
+
+.grid2{
+    @include gridx(flex, column, grid2);
+    padding: 0 1.25rem;
+
+    h4{
+        @extend .titles;
+        font-size: map-get($font-sizes , l);
+        color: black;
+        text-align: center;
+        margin: 0 0 10 0;
+    }
+
+    p{
+        @extend.text;
+        text-align: justify;
+        margin: 0;
+    }
+}
+
+.grid3{
+    @include gridx(flex, none, grid3);
+    align-items: start;
+
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        filter: drop-shadow(.25rem .25rem .625rem rgba(0,0,0,0.5));
+    }
+}
+
+.grid4{
+    @include gridx(flex, column, grid4);
+    padding: 1.25rem;
+
+    h4{
+        @extend .titles;
+        font-size: map-get($font-sizes , l);
+        color: black;
+        text-align: center;
+        margin: 0 0 10 0;
+    }
+
+    p{
+        @extend.text;
+        text-align: justify;
+        margin: 0;
+    }
+}

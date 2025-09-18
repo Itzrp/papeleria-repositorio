@@ -1,0 +1,19 @@
+/*Tipografías*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poetsen+One&display=swap');
+
+.titles{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: map-get($font-weights , medium);
+    font-style: normal;
+    font-size: map-get($font-sizes , xxl);
+    color: $colorPrincipal;
+}
+
+
+.text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: map-get($font-weights , light);
+    font-style: normal;
+    font-size: map-get($font-sizes , m);
+    color: $colorTerciario;
+}

@@ -1,0 +1,19 @@
+@media (max-width: 48rem){
+    #services-container{
+        div{
+            @include flex(column, none, center, center, 1.875rem);
+            div{
+                width: 100%;
+            }
+        }
+    }
+
+    #cards-container{
+        div{
+            div{
+                width: 50%;
+            }
+        }
+    }
+
+}

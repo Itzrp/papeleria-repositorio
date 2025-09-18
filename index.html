@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,78 +24,109 @@
                             <a class="nav-link active" href="#">Inicio</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="pages/productos.html">Productos</a>
+                            <a class="nav-link" href="pages/productos.html">Productos</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="pages/servicios.html">Servicios</a>
+                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="pages/promociones.html">Promociones</a>
+                            <a class="nav-link" href="pages/promociones.html">Promociones</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="#about-us">Sobre nosotros</a>
+                            <a class="nav-link" href="#about-us">Sobre nosotros</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a href="https://wa.link/" target="_blank" class="button-cotiza">Cotiza aquí</a>
+                            <a href="https://wa.link/" target="_blank" id="button-cotiza" class="nav-link">Cotiza aquí</a>
                         </li>
                     </ul>
                 </div>
-                <a href="https://wa.link/" target="_blank" class="button-cotiza-outside">Cotiza aquí</a>
+                <a href="https://wa.link/" target="_blank" id="button-outside" class="btn btn-primary button-style">Cotiza aquí</a>
             </div>
         </nav>
     </header>
+
     <main>
         <section> <!--IMAGEN PRINCIPAL-->
             <img src="assets/img/banner-inicio.svg" alt="información sobre promociones de lista de útiles" class="img-ppal-style">
         </section>
 
-        <section class="items"> <!--LO MÁS NUEVO-->
-            <h2>¡Lo más nuevo!</h2>
-            <div class="cards-container"> <!--CONTENEDOR DE CARDS-->
-                <article class="card-item">
-                    <img src="assets/img/sketch.jpg" alt="artículos escolares" class="img-item-style">
-                    <p>Lápiz de grafito para dibujo</p>
-                    <h4>24 piezas</h4>
-                </article>
-                <article class="card-item">
-                    <img src="assets/img/sketch.jpg" alt="artículos escolares" class="img-item-style">
-                    <p>Lápiz de grafito para dibujo</p>
-                    <h4>24 piezas</h4>
-                </article>
-                <article class="card-item">
-                    <img src="assets/img/sketch.jpg" alt="artículos escolares" class="img-item-style">
-                    <p>Lápiz de grafito para dibujo</p>
-                    <h4>24 piezas</h4>
-                </article>
-            </div>  
+        <section class="container my-5"> <!--LO MÁS NUEVO-->
+            <h2 class="text-center mb-4">¡Lo más nuevo!</h2>
+            <div class="row g-5"> <!--CONTENEDOR DE CARDS-->
+                <div class="col-md-4">
+                    <article class="card h-100 text-center align-items-center p-1 rounded-5" data-aos="zoom-in">
+                        <img src="assets/img/ícono-cuaderno.svg" class="card-img-top img-item-style" alt="Artículos escolares">
+                        <div class="card-body p-0">
+                            <h5 class="card-title my-card-title">Lápiz de grafito para dibujo</h5>
+                            <p class="card-text my-card-text">24 piezas</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 text-center align-items-center p-1 rounded-5" data-aos="zoom-in">
+                        <img src="assets/img/ícono-cuaderno.svg" class="card-img-top img-item-style" alt="Artículos escolares">
+                        <div class="card-body p-0">
+                                <h5 class="card-title my-card-title">Lápiz de grafito para dibujo</h5>
+                                <p class="card-text my-card-text">24 piezas</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 text-center align-items-center p-1 rounded-5" data-aos="zoom-in">
+                        <img src="assets/img/ícono-cuaderno.svg" class="card-img-top img-item-style" alt="Artículos escolares">
+                        <div class="card-body p-0">
+                            <h5 class="card-title my-card-title">Lápiz de grafito para dibujo</h5>
+                            <p class="card-text my-card-text">24 piezas</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section class="categories"> <!--CATEGORÍAS DESTACADAS-->
-            <h2>Categorías destacadas</h2>
-            <div class="cards-container"> <!--CONTENEDOR DE CARDS-->
-                <article class="card-item">
-                    <img src="assets/img/lapices-de-color.png" alt="artículos escolares y de oficina">
-                    <p>Artículos escolares y de oficina</p>
-                    <a href="" class="button-style">Ver más</a>
-                </article>
-                <article class="card-item">
-                    <img src="assets/img/desarrollo-de-productos.png" alt="etiquetas personalizadas">
-                    <p>Etiquetas personalizadas</p>
-                    <a href="" class="button-style">Ver más</a>
-                </article>
-                <article class="card-item">
-                    <img src="assets/img/reparacion-de-la-maquina.png" alt="reparación de equipos de cómputo" class="logo-style">
-                    <p>Reparación de equipos de cómputo</p>
-                    <a href="" class="button-style">Ver más</a>
-                </article>
-                <article class="card-item">
-                    <img src="assets/img/impresion.png" alt="servicios de impresión">
-                    <p>Servicios de impresión</p>
-                    <a href="" class="button-style">Ver más</a>
-                </article>
+            <div  id="cards-container" class="container my-5">
+                <h2 class="text-center mb-5">Categorías destacadas</h2>
+                <div class="row g-5"> <!--CONTENEDOR DE CARDS-->
+                    <div class="col-md-3">
+                        <article class="card h-100 text-center align-items-center p-4 rounded-5 my-card" data-aos="flip-up">
+                            <img src="assets/img/lapices-de-color.png" class="card-img-top img-item-style-categories" alt="etiquetas personalizadas">
+                            <div class="card-body px-0 pb-0 pt-4">
+                                <h5 class="card-title my-card-title mb-4">Artículos escolares y de oficina</h5>
+                                <a href="" class="btn btn-primary button-style">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="card h-100 text-center align-items-center p-4 rounded-5 my-card" data-aos="flip-up">
+                            <img src="assets/img/desarrollo-de-productos.png" class="card-img-top img-item-style-categories" alt="etiquetas personalizadas">
+                            <div class="card-body px-0 pb-0 pt-4">
+                                <h5 class="card-title my-card-title mb-4">Etiquetas y portadas personalizadas</h5>
+                                <a href="" class="btn btn-primary button-style">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="card h-100 text-center align-items-center p-4 rounded-5 my-card" data-aos="flip-up">
+                            <img src="assets/img/reparacion-de-la-maquina.png" class="card-img-top img-item-style-categories" alt="etiquetas personalizadas">
+                            <div class="card-body px-0 pb-0 pt-4">
+                                <h5 class="card-title my-card-title mb-4">Reparación de equipos de cómputo</h5>
+                                <a href="" class="btn btn-primary button-style">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article class="card h-100 text-center align-items-center p-4 rounded-5 my-card" data-aos="flip-up">
+                            <img src="assets/img/impresion.png" class="img-item-style-categories" alt="etiquetas personalizadas">
+                            <div class="card-body px-0 pb-0 pt-4">
+                                <h5 class="card-title my-card-title mb-4">Servicios de copias e impresiones</h5>
+                                <a href="" class="btn btn-primary button-style">Ver más</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -110,37 +142,51 @@
                 <p>Promociones</p>
                 <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
                 <p>Promociones</p>
+                <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
+                <p>Promociones</p>
+                <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
+                <p>Promociones</p>
+                <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
+                <p>Promociones</p>
+                <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
+                <p>Promociones</p>
+                <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
+                <p>Promociones</p>
+                <img src="assets/img/por-ciento.png" alt="porcentaje" class="icon-style">
+                <p>Promociones</p>
             </div>
-            <div class="discount">
+            <div class="container ms-0 me-0 py-0 my-5 discount">
                 <ul>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
                     <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
                 </ul>
-                <a href="pages/promociones.html" class="button-offer-style"><span>Ver todas las promociones disponibles</span>
+                <a href="pages/promociones.html" class="btn btn-primary button-offer-style"><span>Ver todas las promociones disponibles</span>
                 </a>
                 <h3>¡No te pierdas estas increíbles promociones!</h3>
             </div>  
         </section>
 
         <section id="about-us" class="about-us"> <!--SOBRE NOSOTROS-->
-            <h2>Sobre nosotros</h2>
+            <h2 class="text-center mb-5">Sobre nosotros</h2>
             <div class="about-us-grid">
-                <div class="grid1">
-                    <img src="assets/img/papeleria.jpeg" alt="papelería">
+                <div class="grid1" data-aos="zoom-in-left">
+                    <img src="assets/img/papeleria-fondo.svg" alt="papelería">
                 </div>
                 <div class="grid2">
                     <h4>Nuestra historia</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti consequatur excepturi ipsum itaque facilis id quibusdam assumenda, nemo, maiores error aspernatur voluptatibus magnam perferendis consequuntur tenetur laboriosam animi ea?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolorum provident laboriosam mollitia esse aperiam praesentium velit eveniet ea pariatur voluptatibus quis! Repellendus doloremque aliquam voluptatum quaerat aut optio ipsam.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi minus officiis dolores, facere commodi facilis iure, iste obcaecati itaque reprehenderit quam id eius nulla, esse earum non tenetur blanditiis aliquam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi minus officiis dolores, facere commodi facilis iure, iste obcaecati itaque reprehenderit quam id eius nulla, esse earum non tenetur blanditiis aliquam?</p>
                 </div>
-                <div class="grid3">
+                <div class="grid3" data-aos="zoom-in-right">
                     <img src="assets/img/logo-lwo.png" alt="logo papelería">
                 </div>
                 <div class="grid4">
                     <h4>Nuestro compromiso con el cliente</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ut sunt itaque optio quidem maiores in quae quo necessitatibus alias sit officia eum magni tenetur, labore dolor, nesciunt facilis suscipit.</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ut sunt itaque optio quidem maiores in quae quo necessitatibus alias sit officia eum magni tenetur, labore dolor, nesciunt facilis suscipit.</p>
                 </div>
             </div>
@@ -149,6 +195,12 @@
     <footer class="footer-style">
         <p>©2025 Papelería La Web On. Todos los derechos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>

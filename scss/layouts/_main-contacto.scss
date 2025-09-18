@@ -1,0 +1,75 @@
+.contact-us{
+    @include flex(row, wrap, center, none, none);
+    background-color: $bgColor4;
+    width: 100%;
+    height: auto;
+    padding: 4.375rem 1.25rem 3.125rem 1.25rem;
+}
+
+.map-container{
+    @include flex(column, none, none, center, none);
+    width: 50%;
+    padding: 0 1.25rem 0 0;
+
+    div{  
+        @include flex(column, none, center, center, none);
+
+        h3{
+            @extend .titles;
+            color: $colorPrincipal;
+        }
+    }
+
+    p{
+        @extend .text;
+    font-weight: map-get($font-weights , semi-bold);
+        margin: 0;
+    }
+}
+
+.map{
+    width: 100%;
+    height: 21.875rem;
+    border-radius: .625rem;
+    box-shadow: 0 .25rem .625rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form-style{
+    @include flex(column, none, none, center, none);
+    background-color: $bgColor7;
+    width: 50%;
+    padding: 1.25rem;
+    border-radius: .625rem;
+    box-shadow: 0 .25rem .625rem rgba(0, 0, 0, 0.2);
+}
+
+.form-size{
+    width: 70%; 
+
+    form{
+
+        div{
+
+            label{
+                @extend .text;
+                font-weight: map-get($font-weights , bold);
+            }
+
+            input{
+                @extend .text;
+                background-color: $bgColor3;
+                border: none;
+                padding: .3125rem;
+            }
+
+            textarea{
+                @extend .text;
+                background-color: $bgColor3;
+                border: none;
+                padding: .3125rem;
+            }
+        }
+    }
+}
+

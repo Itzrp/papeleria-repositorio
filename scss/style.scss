@@ -1,0 +1,37 @@
+/*utilities*/
+
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+
+/*base*/
+@import "./base/reset";
+@import "./base/fonts";
+
+
+/*layout*/
+@import "./layouts/header";
+@import "./layouts/main-index";
+@import "./layouts/main-productos";
+@import "./layouts/main-servicios";
+@import "./layouts/main-promociones";
+@import "./layouts/main-contacto";
+@import "./layouts/section-img-principal";
+@import "./layouts/section-categorias-dest";
+@import "./layouts/section-offers";
+@import "./layouts/section-about-us";
+@import "./layouts/footer";
+
+
+/*componentes*/
+@import "./components/navbar";
+@import "./components/cards";
+@import "./components/buttons";
+@import "./components/logo";
+
+
+/*mediaq*/
+@import "./layouts/media/media990";
+@import "./layouts/media/media768";
+@import "./layouts/media/media320";

@@ -1,0 +1,43 @@
+
+.button-style{
+    @include button($colorTerciario, $bgColor2, 1.25rem, $bgColor2, inline-block);
+
+    &:hover{
+        background-color: $colorPrincipal;
+        border-color: $colorPrincipal;
+    }
+}
+
+
+#button-cotiza { //Botón que aparece en el dropdown cuando se hace más pequeña la pantalla
+    display: none;
+}
+
+
+.button-offer-style{
+    @extend .button-style;
+    transition: all 0.5s;
+    margin: .3125rem;
+}
+
+.button-offer-style span {
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-offer-style span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    right: -1.25rem;
+    transition: 0.5s;
+}
+
+.button-offer-style:hover span {
+    padding-right: 1.5625rem;
+}
+
+.button-offer-style:hover span:after {
+    opacity: 1;
+    right: 0;
+}

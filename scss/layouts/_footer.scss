@@ -1,0 +1,9 @@
+.footer-style{
+    padding: .625rem;
+    text-align: center;
+    font-weight: map-get($font-weights , bold);
+
+    p{
+        margin: 0;
+    }
+}

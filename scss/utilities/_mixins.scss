@@ -1,0 +1,39 @@
+@mixin flex( $direction, $wrap, $justify, $items, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $items;
+    gap: $gap;
+}
+
+
+@mixin grid($col, $row, $justify, $align, $gap){
+    width: 100%;
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    align-content: $align;
+    gap: $gap;
+}
+
+@mixin gridx($display, $direction, $grid-area){
+    width: 100%;
+    display: $display;
+    flex-direction: $direction;
+    grid-area: $grid-area;
+}
+
+@mixin button($color, $bgColor, $bRadius, $bColor, $display){
+    text-decoration: none;
+    color: $color;
+    background-color: $bgColor;
+    padding: .3125rem .9375rem;
+    border-radius: $bRadius;
+    border-color: $bColor;
+    display: $display;
+    @extend .text;
+    font-weight: map-get($font-weights, bold);
+    font-size: map-get($font-sizes, l);
+}

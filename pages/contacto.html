@@ -20,29 +20,33 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav gap-3 fs-5">
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="productos.html">Productos</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="servicios.html">Servicios</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="promociones.html">Promociones</a>
+                            <a class="nav-link" href="promociones.html">Promociones</a>
                         </li>
                         <li class="nav-item my-navbar-item">
-                            <a class="nav-link active" href="../index.html#about-us">Sobre nosotros</a>
+                            <a class="nav-link" href="../index.html#about-us">Sobre nosotros</a>
                         </li>
                         <li class="nav-item my-navbar-item">
                             <a class="nav-link active" href="#">Contacto</a>
                         </li>
+                        <li class="nav-item my-navbar-item">
+                            <a href="https://wa.link/" target="_blank" id="button-cotiza" class="nav-link">Cotiza aquí</a>
+                        </li>
                     </ul>
                 </div>
-                <a href="https://wa.link/" target="_blank" class="button-style">Cotiza aquí</a>
+                <a href="https://wa.link/" target="_blank" id="button-outside" class="btn btn-primary button-style">Cotiza aquí</a>
             </div>
-        </nav>
+        </nav>  
     </header>
+
     <main>
         <section id="contact-us"> <!--CONTACTO-->
             <div class="contact-us">
@@ -56,29 +60,29 @@
                 </div>
                 <div class="form-style">
                     <div class="form-size">
-                        <h2>Contacto</h2>
+                        <h2 class="text-center mb-4">Contacto</h2>
                         <form action="" method="post">
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="name" class="form-label">Nombre:</label>
                                 <input type="text" class="form-control" id="name">
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="mail" class="form-label">Correo electrónico:</label>
                                 <input type="email" class="form-control" id="mail">
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="phone" class="form-label">Teléfono:</label>
                                 <input type="number" class="form-control" id="phone">
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="msj" class="form-label">Mensaje:</label>
                                 <textarea class="form-control" id="name"></textarea>
                             </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn change-color">Enviar</button>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary button-style">Enviar</button>
                             </div>
                         </form>
                     </div>

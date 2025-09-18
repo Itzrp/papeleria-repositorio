@@ -1,0 +1,115 @@
+@media (max-width: 20rem){
+    .img-item-style{
+        width: 50%;
+        margin-bottom: .625rem;
+    }
+
+    #cards-container{
+        div{
+            div{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    .img-item-style-categories{
+        width: 40%;
+        margin-bottom: .625rem;
+    }
+
+    .button-offer-style{  
+        font-size: map-get($font-sizes, m);
+    }
+
+    #offers{
+        div{
+            h3{
+                font-size: map-get($font-sizes , l);
+            }
+        }
+    }
+
+    .about-us-grid{
+        @include grid(100%, auto, center, none, 1.5625rem);
+        grid-template-areas: 
+        "grid3"
+        "grid2"
+        "grid1"
+        "grid4"
+        ;
+    }
+
+    .grid2{
+        padding: 0;
+    }
+
+    .grid3{
+        justify-content: center;
+        img{
+            width: 50%;
+        }
+    }
+
+    .grid4{
+        padding: 0;
+    }
+
+    .catalog-container{
+        flex-direction: column;
+        gap: 3.75rem;
+    }
+
+    .categories-container{
+        width: 100%;
+    }
+
+    #services-container{
+        div{
+            div{
+                h3{
+                    font-size: map-get($font-sizes , l);
+                }
+            }
+        }
+    }
+
+    .offers-container{
+        div{
+            @include flex(column, none, center, center, none);
+            div{
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    .contact-us{
+        flex-direction: column;
+        padding: 3.125rem 1.25rem 3.125rem 1.25rem;
+    }
+
+    .map-container{
+        width: 100%;
+        padding: 0 0 3.125rem 0;
+
+        div{  
+
+            h3{
+                font-size: map-get($font-sizes , xl);
+            }
+        }
+
+        p{
+            font-size: map-get($font-sizes , s);
+        }
+    }
+
+    .form-style{
+        width: 100%;
+    }
+
+    .footer-style{
+        font-size: map-get($font-sizes , s);
+    }
+}
