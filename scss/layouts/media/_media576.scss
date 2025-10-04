@@ -1,0 +1,19 @@
+@media (max-width: 36rem){
+    .img-item-style{
+        width: 30%;
+    }
+
+    .img-item-style-categories {
+        width: 20%;
+    }
+
+    .catalog-container{
+        flex-direction: column;
+        gap: 3.75rem;
+    }
+
+    .categories-container{
+        width: 100%;
+    }
+
+}

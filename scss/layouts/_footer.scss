@@ -1,9 +1,27 @@
 .footer-style{
-    padding: .625rem;
-    text-align: center;
-    font-weight: map-get($font-weights , bold);
+    background-color: $bgColor4;
+}
 
-    p{
-        margin: 0;
+.footer{
+    
+    h4{
+        @extend .titles;
+        font-size: map-get($font-sizes , m);
     }
 }
+
+.footer-col {
+    padding: 0 20px;
+
+    p{
+        font-size: map-get($font-sizes , s);
+    }
+}
+
+.reservados{
+    text-align: center;
+    font-size: map-get($font-sizes , s);
+    font-weight: map-get($font-weights , medium);
+    margin-top: 1.25rem;
+}
+

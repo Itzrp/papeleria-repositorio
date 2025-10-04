@@ -1,7 +1,7 @@
 @mixin flex( $direction, $wrap, $justify, $items, $gap){
     display: flex;
     flex-direction: $direction;
-    flex-wrap: $wrap;
+    flex-wrap: $wrap; //ayuda a que los elementos pasen a la siguiente línea si no caben
     justify-content: $justify;
     align-items: $items;
     gap: $gap;

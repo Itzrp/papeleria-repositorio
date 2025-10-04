@@ -27,7 +27,7 @@
     padding-bottom: 1.25rem;
 
     div{
-        @include flex(column, none, center, center, .625rem);
+        @include flex(column, nowrap, center, center, .625rem);
         margin: 0;
         padding: .3125rem;
         position: absolute;

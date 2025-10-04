@@ -1,0 +1,96 @@
+.ticket-container {
+    max-width: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, $bgColor3 0%, $bgColor4 100%);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;    
+}
+
+//División efecto ticket
+.bottom-perforation {
+    position: absolute;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: $bgColor4;
+    border-radius: 50%;
+    right: 31.8%;
+    bottom: -0.9375rem;
+    z-index: 1;
+}
+
+.perforation-line {
+    position: absolute;
+    right: 33%;
+    top: 0;
+    bottom: 0;
+    width: .1875rem;
+}
+
+.perforation-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, $colorPromo 40%, transparent 40%);
+    background-size: .625rem 1.25rem;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.perforation-line::before {
+    content: '';
+    position: absolute;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: $bgColor4;
+    border-radius: 50%;
+    left: 40%;
+    transform: translateX(-50%);
+    top: -0.9375rem;
+    z-index: 1;
+}
+
+//info ticket
+.ticket-content {
+    width: 100%;
+    @include flex(row, wrap, space-between, center, 2.5rem);
+}
+
+.left-section {
+    max-width: 100%;
+    width: 60%;
+    flex: 1;
+
+    div{
+        h2{
+            @extend .titles;
+        }
+
+        ul{
+            li{
+                list-style: circle;
+                @extend.text;
+                font-weight: map-get($font-weights , regular);
+            }
+        }
+    }
+}
+
+.right-section {
+    max-width: 100%;
+    width: 30%;
+    text-align: center;
+    h3{
+        @extend .text;
+        color: $colorSecundario;
+        margin: 0;
+        font-size: map-get($font-sizes , xxl);
+        font-weight: map-get($font-weights , bold);
+    }
+}

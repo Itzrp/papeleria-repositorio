@@ -1,15 +1,14 @@
-.my-navbar{
+.navbar{
     max-width: 100%;
+    width: 100%;
     padding-top: .625rem;
     padding-right:1.25rem;
     background-color: $bgColor1;
-
-    
 }
 
-.my-navbar-item{
+.navbar-item{
         @extend .text;
-        font-size: map-get($font-sizes , l);
+        font-size: map-get($font-sizes , s);
         font-weight: map-get($font-weights, regular);
 
         

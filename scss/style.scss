@@ -29,9 +29,12 @@
 @import "./components/cards";
 @import "./components/buttons";
 @import "./components/logo";
+@import "./components/ticket";
+@import "./components/notebook";
 
 
 /*mediaq*/
 @import "./layouts/media/media990";
 @import "./layouts/media/media768";
+@import "./layouts/media/media576";
 @import "./layouts/media/media320";

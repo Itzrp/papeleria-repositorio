@@ -5,17 +5,7 @@
         margin-bottom: .625rem;
     }
 
-    #cards-container{
-        div{
-            div{
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    }
-
     .service-card{ 
-
     img{
         width: 100%;
     }
@@ -63,15 +53,6 @@
         padding: 0;
     }
 
-    .catalog-container{
-        flex-direction: column;
-        gap: 3.75rem;
-    }
-
-    .categories-container{
-        width: 100%;
-    }
-
     #services-container{
         div{
             div{
@@ -84,7 +65,7 @@
 
     .offers-container{
         div{
-            @include flex(column, none, center, center, none);
+            @include flex(column, wrap, center, center, none);
             div{
                 width: 100%;
                 padding: 0;

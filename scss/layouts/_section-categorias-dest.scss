@@ -1,10 +1,15 @@
-.categories{
+.bgcategories{
+    max-width: 100%;
     width: 100%;
-    height: auto;
     background-image: url('../assets/img/orange-background.svg');
     background-position: center;
     background-size: cover; 
-    @include flex(column, none, center, center, none);
+}
+
+.categories{
+    width: 100%;
+    height: auto;
+    @include flex(column, wrap, center, center, none);
 }
 
 

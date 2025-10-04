@@ -1,5 +1,5 @@
 .catalog-container{
-    @include flex(row, none, none, none, 1.25rem);
+    @include flex(row, nowrap, none, none, 1.25rem);
     background-color: $bgColor5;
     padding-top: 1.875rem;
     padding-bottom: 2.5rem;
@@ -14,7 +14,7 @@
 }
 
 .categories-container{
-    @include flex(column, none, left, none, .625rem);
+    @include flex(column, nowrap, left, none, .625rem);
     padding: 0 0 0 .9375rem;
     width: 30%;
 
@@ -24,13 +24,20 @@
         color: $colorTerciario;
     }
 
-    div{
-        @include flex(row, none, space-between, center, none);
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        p{
+        li{
+            @include flex(row, nowrap, space-between, center, none);            
+            border-bottom: .0625rem solid $bgColor6;
+
+            p{
             @extend .text;
-            margin: 0;
+            margin: .625rem 0;
             font-weight: map-get($font-weights, regular);
+        }
         }
     }
 }

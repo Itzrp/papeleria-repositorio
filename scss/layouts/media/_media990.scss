@@ -1,16 +1,33 @@
 @media (max-width: 61.875rem){
-    #button-cotiza{
+    #item-cotiza{
         display: inline-block;
         font-weight: map-get($font-weights , bold);
-    
     }
 
     #button-outside{
         display: none;
     }
 
-    #cards-container{
-        max-width: 100%;
+    .img-item-style{
+        width: 40%;
+    }
+
+    .notebook{
+        @include flex(column, nowrap, center, center, 2.5rem);
+    }
+
+    .pagel{
+        width: 100%;
+        height: auto;
+        padding: 1.5625rem;
+    }
+
+    .circlesl{
+        display: none;
+    }
+
+    .categories{
+        max-width: 90%;
     }
 
     .categories-container{
@@ -40,5 +57,4 @@
             font-size: map-get($font-sizes , s);
         }
     }
-
 }

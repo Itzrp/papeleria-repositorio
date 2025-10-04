@@ -1,8 +1,16 @@
+#offers{
+    width: 100%;
+    height: auto;
+    background-image: url('../assets/img/cuadros-azul.svg');
+    background-position: center;
+    background-size: cover; 
+}
+
 .discount-banner{
     padding: .625rem .0063rem;
     width: 100%;
     background-color: $colorSecundario;
-    @include flex(row, none, space-evenly, center, .625rem);
+    @include flex(row, nowrap, space-evenly, center, .625rem);
     overflow-x: hidden; 
 
     p{
@@ -17,28 +25,4 @@
         height: .9375rem;
     }
 
-.discount{
-    padding: 1.25rem;
-    @include flex(column, wrap, justify, none, 1.25rem);
 
-    ul{
-        margin: 0;
-
-        li{
-            list-style: circle;
-            @extend.text;
-            font-weight: map-get($font-weights , regular);
-        }
-    }
-
-    a{
-        width: fit-content;
-    }
-
-    h3{
-        color: $colorPrincipal;
-        margin: 0;
-        font-size: map-get($font-sizes , xl);
-        font-weight: map-get($font-weights , bold);
-    }
-}

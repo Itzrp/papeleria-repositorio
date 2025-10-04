@@ -1,0 +1,61 @@
+.notebook{
+    @include flex(row, nowrap, center, center, .625rem);
+    max-width: 100%;
+    width: 90%;
+    padding: 1.25rem;
+
+}
+
+.pagel{
+    position: relative;
+    width: 50%;
+    height: 31.25rem;
+    padding: 1.5625rem 3.125rem 1.5625rem 1.5625rem;
+    background-image: linear-gradient(rgba(145, 162, 194, 0.4), rgba(145, 162, 194, 0.4)),
+    url('../assets/img/blue-background.svg');
+    background-position: center;
+    background-size: cover; 
+    border-radius: 1%;
+    box-shadow: -10px 10px #fff, -20px 20px rgba(0, 0, 0, 0.37);
+}
+
+.pager{
+    @extend .pagel;
+    padding: 1.5625rem 1.5625rem 1.5625rem 3.125rem;
+    box-shadow: 10px 10px #fff, 20px 20px rgba(0, 0, 0, 0.37);
+}
+
+.circlesl{
+    position: absolute;
+    width: 1.125rem;
+    height: 1.125rem;
+    top: .9375rem;
+    right: .625rem;
+    background-color: $bgColor3;
+    border-radius: 50%;
+    color: $bgColor3;
+    box-shadow: 0 2.1875rem, 0 4.375rem, 0 6.5625rem, 0 8.75rem, 0 10.9375rem, 0 13.125rem, 0 15.3125rem, 0 17.5rem, 0 19.6875rem, 0 21.875rem, 0 24.0625rem, 0 25.9375rem, 0 28.125rem;
+}
+
+.circlesr{
+    @extend .circlesl;
+    right: 0;
+    left: .625rem;
+}
+
+.linel{
+    @extend .circlesl;
+    width: 2.0625rem;
+    height: .9375rem;
+    top: .125rem;
+    right: -1.25rem;
+    border-radius: .625rem;
+    background-color: $colorTerciario;
+    color: $colorTerciario;
+}
+
+.liner{
+    @extend .linel;
+    right: 0;
+    left: -1.25rem;
+}
